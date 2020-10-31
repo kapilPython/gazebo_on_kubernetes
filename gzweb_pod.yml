@@ -9,8 +9,8 @@ spec:
    -  name: gazebo-client
       image: kapildesh/gzweb7:v1
       env:
-        #- name: GAZEBO_HOSTNAME
-        #  value: gazebo-client
+        - name: GAZEBO_HOSTNAME
+          value: gazebo-client
         - name: GAZEBO_MASTER_URI
           value: http://gazebo-server:11345
       args:

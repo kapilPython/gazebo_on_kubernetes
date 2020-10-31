@@ -8,9 +8,9 @@ spec:
   containers: 
    -  name: gazebo-server
       image: gazebo:gzserver7
-      #env:
-        #- name: GAZEBO_HOSTNAME
-        #  value: gazebo-server
+      env:
+        - name: GAZEBO_HOSTNAME
+          value: gazebo-server
       args:
           - gzserver 
           - "--verbose"
