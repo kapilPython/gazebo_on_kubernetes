@@ -8,9 +8,14 @@ spec:
   containers: 
    -  name: gazebo-server
       image: gazebo:gzserver7
+      ports:
+        - containerPort: 11345
+          name: gazebo-server
       env:
         - name: GAZEBO_HOSTNAME
           value: gazebo-server
+        - name: GAZEBO_MASTER_URI
+          value: http://gazebo-server:11345
       args:
           - gzserver 
           - "--verbose"
