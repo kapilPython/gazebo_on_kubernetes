@@ -9,6 +9,7 @@ spec:
       protocol: TCP
     - port: 8080
       protocol: TCP
+      name: tcp-8080
       targetPort: 8080
   selector: 
     name: gazebo-client
