@@ -3,7 +3,7 @@ kind: Service
 metadata: 
   name: gazebo-client
 spec:
-  clusterIP: None
+  #clusterIP: None
   ports: 
     - port: 11345
       protocol: TCP
