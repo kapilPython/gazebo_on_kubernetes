@@ -16,3 +16,5 @@ spec:
       args:
           - npm 
           - start
+          - "-p"
+          - 1234
