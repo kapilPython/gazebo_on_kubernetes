@@ -10,7 +10,7 @@ spec:
       image: gazebo:gzserver7
       env:
         - name: GAZEBO_HOSTNAME
-        - value: gazebo-server
+          value: gazebo-server
       args:
           - gzserver 
           - "--verbose"
