@@ -5,8 +5,8 @@ metadata:
 spec:
   #clusterIP: None
   ports: 
-    - port: 11345
-      protocol: TCP
+    #- port: 11345
+    #  protocol: TCP
     - port: 8080
       protocol: TCP
       name: tcp-8080
