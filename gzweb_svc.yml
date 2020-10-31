@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata: 
-  name: gazeboClient
+  name: gazebo-client
 spec:
   clusterIP: None
   ports: 
@@ -11,5 +11,5 @@ spec:
       protocol: TCP
       targetPort: 8080
   selector: 
-    name: gazeboClient
+    name: gazebo-client
   type: LoadBalancer

@@ -1,16 +1,16 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: gazeboServer
+  name: gazebo-server
   labels:
-    name: gazeboServer
+    name: gazebo-server
 spec:
   containers: 
-   -  name: gazeboServer
+   -  name: gazebo-server
       image: gazebo:gzserver7
       env:
         - name: GAZEBO_HOSTNAME
-        - value: gazeboServer
+        - value: gazebo-server
       args:
           - gzserver 
           - "--verbose"

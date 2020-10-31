@@ -1,18 +1,18 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: gazeboClient
+  name: gazebo-client
   labels:
-    name: gazeboClient
+    name: gazebo-client
 spec:
   containers: 
-   -  name: gazeboClient
+   -  name: gazebo-client
       image: kapildesh/gzweb7:v1
       env:
         - name: GAZEBO_HOSTNAME
-          value: gazeboClient
+          value: gazebo-client
         - name: GAZEBO_MASTER_URI
-          value: http://gazeboServer:11345
+          value: http://gazebo-server:11345
       args:
           - npm 
           - start
